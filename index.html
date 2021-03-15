@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Cadastro Online</title>
+        <link rel="stylesheet" href="Style.css">
+        
+        <script type="text/javascript" src="Script.js"></script>
+    </head>
+<body>
+
+
+    <div id="menu">
+
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+
+    </div>
+<h1>CADASTRE-SE</h1>
+
+<!--Começa a parte dos dados de Login-->
+<form>
+    
+    <div class="Titulologin">
+       <strong>Dados de Login</strong>
+    </div>
+
+<div class="caixa1">
+    <div class="Login">
+            <div class="relativa">
+                <p> CPF:  <b style="color: red;">Formato: xxx.xxx.xxx-xx</b></p>
+                <input type="number" class="input" id="cpf" maxlength="11" size="20">                
+            </div>        
+    </div>
+<br>
+    <div class="Login">
+
+        <div class="relativa">
+             <p>E-mail</p>
+            <input type="text" id="email"  class="input">
+        </div>
+
+        <div class="relativa">
+            <p>Confirmar</p>
+            <input type="text" id="confirmaemail" class="input">
+        </div>
+
+        <div class="relativa">
+             <p>Senha</p>
+             <input type="password" id="senha"  class="input" size="11">
+        </div>
+
+        <div class="relativa">
+            <p>Confirmar</p>
+             <input type="password" id="confirmasenha" class="input" size="11">
+        </div>
+        <br>
+      
+
+    </div>
+</div>
+
+
+
+</form>
+
+<br><br>
+
+
+
+<!-- Começa a parte de dados  --> 
+
+<form>
+
+    <div class="Titulologin">
+       <strong>Dados de contato</strong>
+        
+    </div>
+
+    <div class="caixa2">
+
+    <div class="Login">
+
+        <div class="relativa">
+            <p>Nome</p>
+            <input type="text" id="Nome" class="input" size="41">
+        </div>
+
+        <div class="relativa">
+            <p>Sobrenome</p>
+            <input type="text" id="Sobrenome" class="input" size="42">
+        </div>
+    </div>
+
+    <div class="Login">
+
+        <div class="relativa">          
+                <p>Data de Nascimento</p>
+                <input type="date" id="DataDeNascimento" class="input">
+            </div>
+
+
+        <div class="relativa2">
+            <p> RG     <small>(somente letras e numeros)</small>  </p> 
+            <input type="text" id="RG" class="input">
+        </div>
+    
+        <div class="relativa3">
+            <div class="selectdiv">
+                <p>Sexo</p>
+                    <select id="Sexo">
+                        <option value="Masculino">Masculino</option>
+                        <option value="Feminino">Feminino</option>
+                        <option value="Heli">Helicoptero de Ataque Apache</option>
+                        <option value="Outro">Outro</option>
+                    </select>
+            </div>
+        </div>
+            <br>
+        
+    </div>
+
+
+    <div class="Login">
+
+        <div class="relativa">
+            <p>CEP</p>
+            <input type="number" id="CEP" maxlength="8" class="input" >
+        </div>
+
+        <div class="relativa">   
+            <p>Endereço</p>
+            <input type="text" id="Endereco" class="input" size="40">
+        </div>
+        
+        <div class="relativa">
+            <p>Nº </p>
+            <input type="text" id="Numero" class="input" size="12">
+        </div>
+
+    </div>
+
+
+    <div class="Login">
+
+        <div class="relativa">
+            <p>Bairro</p>
+            <input type="text" id="Bairro" class="input" size="30">
+        </div>
+
+        <div class="relativa">
+            <p>Complemento <small>Ap. 42</small></p>
+            <input type="text" id="Complemento" class="input" size="10">
+        </div>
+
+        <div class="relativa">
+            <p>Cidade</p>
+            <input type="text" id="Cidade" class="input" size="31">
+        </div>
+    </div>
+
+
+    <div class="Login">
+        
+        <div  class="relativa">
+            <div class="selectdiv">
+                <p>Estado</p>
+                    <select id="Estado">
+                        <option value="Acre">Acre</option>
+                        <option value="Acre">Alagoas</option>
+                        <option value="Acre">Amapá</option>
+                        <option value="Acre">Amazonas</option>
+                        <option value="Acre">Bahia</option>
+                        <option value="Acre">Ceará</option>
+                        <option value="Acre">Distrito Federal</option>
+                        <option value="Acre">Espirito Santo</option>
+                        <option value="Acre">Goiás</option>
+                        <option value="Acre">Maranhão</option>
+                        <option value="Acre">Mato Grosso</option>
+                        <option value="Acre">Mato Grosso do Sul</option>
+                        <option value="Acre">Minas Gerais</option>
+                        <option value="Acre">Pará</option>
+                        <option value="Acre">Paraiba</option>
+                        <option value="Acre">Paraná</option>
+                        <option value="Acre">Pernambuco</option>
+                        <option value="Acre">Piauí</option>
+                        <option value="Acre">Rio de Janeiro</option>
+                        <option value="Acre">Rio Grande do Norte</option>
+                        <option value="Acre">Rio Grande do Sul</option>
+                        <option value="Acre">Rondônia</option>
+                        <option value="Acre">Roraima</option>
+                        <option value="Acre">Santa Catarina</option>
+                        <option value="Acre">São Paulo</option>
+                        <option value="Acre">Sergipe</option>
+                        <option value="Acre">Tocantins</option>
+                        <option value="Resto">Resto</option>
+                    </select>
+            </div>    
+        </div>
+    
+
+
+
+        <div  class="relativa">
+            <p>DDD+Telefone</p>
+            <input type="text" id="Telefone" class="input" size="27">
+        </div>
+
+        <div  class="relativa">
+            <p>DDD+Celular</p>
+            <input type="text" id="Celular" name="Cel" class="input" size="27">
+        </div>
+
+    </div>
+</div>
+
+
+</form>
+<br>
+<div>
+    <button class="button1" onclick="AtribuirUsuario();";>Mostrar</button>
+</div>
+<br>
+
+<img  src="https://www.oeduardomoreira.com.br/wp-content/uploads/2015/09/aerodinamica-de-una-vaca.jpg" alt="Corvo">
+
+
+
+
+</body>
+</html>
+
+
+<!--
+    
+    $(document).ready(function(){
+    $('.date').mask('00/00/0000');
+    $('.time').mask('00:00:00');
+    $('.cep').mask('00000-000');
+    $('.phone').mask('(00) 00000-0000');
+    $('.cpf').mask('000.000.000-00');
+    $('.money').mask('000.000.000.000,00');
+});
+
+-->

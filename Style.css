@@ -1,0 +1,204 @@
+
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+:root {
+  --input-border: #7069e6;
+  --input-focus-h: 261;
+  --input-focus-s: 100%;
+  --input-focus-l: 30%;
+}
+
+/*
+O HSL é como uma nova forma de cores, similar ao RGB e HEX
+*/
+
+.input:focus,
+.input:hover {
+  border-color: hsl( var(--input-focus-h), var(--input-focus-s), var(--input-focus-l));
+  box-shadow: 0 0 0 3px hsla( var(--input-focus-h), var(--input-focus-s), calc(var(--input-focus-l) + 40%), 0.8);
+  outline: 3px solid transparent;
+}
+
+
+h1 {
+    color: rgb(0, 61, 46);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 200;
+}
+
+/*
+absolute: O que vc colocar ela n muda, independente do q tenha na tela. 
+relative: ela se adapta e adciona as mudanças de acordo com oq ja tem na tela.
+fixed: Menu, fica sempre onde vc manda, indepente da rolagem na tela.
+*/
+
+
+.input[type='text'],
+.input[type='number'],
+.input[type='password']{
+height: 35%;
+box-sizing: border-box;
+border: 2px solid var(--input-border);
+border-radius: 4px;
+font-family: sans-serif;
+font-size: inherit;
+padding: 0.25em 0.5em;
+border: 2px solid var(--input-border);
+border-radius: 4px;
+transition: 180ms box-shadow ease-in-out;
+}
+
+.button1{
+  background-color: #ffffff;
+  border: 3px solid #a19dee;
+  border-radius: 4px;
+  display: block;
+  padding: 15px 32px;
+  transition: 180ms box-shadow ease-in-out;
+}
+.button1:hover{
+  outline: 3px solid transparent;
+  border-color: hsl( var(--input-focus-h), var(--input-focus-s), var(--input-focus-l));
+  box-shadow: 0 0 0 4px hsla( var(--input-focus-h), var(--input-focus-s), calc(var(--input-focus-l) + 50%), 0.8);
+}
+
+
+
+.Login{
+background-color:#a0c9ff;
+display:flex;
+height: 90px;
+min-width: fit-content;
+border-bottom-left-radius: 0%;
+border-bottom-right-radius: 0%;
+}
+
+.Titulologin{
+  height: 35px;
+  background-color:  #4e47cf;
+  width: 1000px;
+  border-radius: 4px;
+  border-bottom-left-radius: 0%;
+  border-bottom-right-radius: 0%;
+}
+
+
+
+.caixa1{
+    background-color:#a0c9ff;
+    height: 210px;
+    width: 1000px;
+    border: 3px solid #a19dee;
+    border-radius: 4px;
+    border-top: hidden;
+    border-top-left-radius: 0%;
+    border-top-right-radius: 0%;
+}
+
+
+.caixa2{
+    background-color:#a0c9ff;
+    height: 500px;
+    width:1000px;
+    border: 3px solid #a19dee;
+    border-radius: 4px;
+    border-top: hidden;
+    border-top-left-radius: 0%;
+    border-top-right-radius: 0%;
+
+}
+
+
+
+
+
+.relativa {
+  position: relative;
+  left: 30px;
+  display: inline-block;
+  margin-left: 5%;
+  min-width: fit-content;
+}
+
+.relativa2 {
+  position: relative;
+  left: 100px;
+  display: inline-block;
+  margin-left: 50px;
+  max-width: fit-content;
+}
+
+.relativa3 {
+  position: relative;
+  left: 100px;
+  display: inline-block;
+  margin-left: 125px;
+  max-width: fit-content;
+}
+
+.element {
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  background: #ce8888;
+
+}
+
+
+p{
+  font-family:Verdana;
+    
+}
+
+strong{
+  font-family:sans-serif;
+    
+}
+
+
+
+
+
+/* A tabela do sexo */
+.selectdiv {
+  position: relative;
+      /*Don't really need this just for demo styling*/
+  
+  min-width: 200px;
+  max-width: fit-content;
+    
+}
+    
+        /* IE11 hide native button (thanks Matt!) */
+select::-ms-expand {
+  display: none;
+}   
+
+.selectdiv select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  /* Add some styling */
+  
+  display: block;
+  width: 100%;
+  max-width: 320px;
+  height: 31px;
+  float: right;
+  padding: 0px 24px;
+  font-size: 16px;
+  line-height: 1.75;
+  color: #333;
+  background-color: #ffffff;
+  background-image: none;
+  border: 2px solid #7069e6;
+  border-radius: 4px;
+  -ms-word-break: normal;
+  word-break: normal;
+}
+    
